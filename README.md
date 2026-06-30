@@ -1,4 +1,4 @@
-# FSWD M2 · LU 2.2 — Axios Instance & Vite Environment Variables (Starter)
+
 
 Build the frontend HTTP layer for **Threadbase**. The Express backend is **already finished** —
 your job is the configured Axios instance and the service layer that the rest of the app calls.
