@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.7.7",
+    "axios": "^1.19.0",
+    "fswd-m2-axios-starter": "file:..",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
