@@ -30,5 +30,11 @@ Open http://localhost:5173.
 3. Commit on a feature branch, push to **your fork**, open a **PR into `main` of your fork**.
 4. Submit the PR link. **Include a screenshot of the console log in the PR description.**
 
+## PR checklist
+- Create a fresh feature branch before pushing.
+- Keep the commit message focused on the API layer work.
+- Include a short summary of the change and the dev/prod URL behavior.
+- Add the browser console screenshot to the PR description to show `VITE_API_URL` resolved.
+
 > Reminder: `.env.development` is git-ignored on purpose. Never commit real env files —
 > commit the `.example` instead.
