@@ -8,19 +8,24 @@
 //   • Return response.data (the payload), NOT the whole response object.
 //
 // Example shape:
-//   import apiClient from "./apiClient";
-//   export async function getThreads() {
-//     const response = await apiClient.get("/api/threads");
-//     return response.data;
-//   }
+// import apiClient from "./apiClient";
+// export async function getThreads() {
+//   const response = await apiClient.get("/api/threads");
+//   return response.data;
+// }
 // ─────────────────────────────────────────────────────────────
 
 // Placeholder so the app compiles. Replace both functions with real
 // apiClient calls that return response.data.
+import { axios } from "axios";
+import apiClient from "./apiClient";
+
 export async function getThreads() {
-  throw new Error("NOT_IMPLEMENTED");
+  const response = await apiClient.get("/api/threads");
+  return response.data;
 }
 
 export async function createThread(data) {
-  throw new Error("NOT_IMPLEMENTED");
+  const response = await apiClient.post("/api/threads", data);
+  return response.data;
 }
