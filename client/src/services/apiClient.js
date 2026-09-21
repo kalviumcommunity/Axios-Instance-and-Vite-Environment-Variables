@@ -14,13 +14,14 @@
 // const apiClient = axios.create({
 //   // ...your config here...
 // });
-//
+//m
 // export default apiClient;
 // ─────────────────────────────────────────────────────────────
 
 // Placeholder so the app runs before you implement this.
 // Replace EVERYTHING below with your axios.create() instance.
-const apiClient = {
+
+/* const apiClient = {
   get() {
     throw new Error("NOT_IMPLEMENTED");
   },
@@ -28,5 +29,17 @@ const apiClient = {
     throw new Error("NOT_IMPLEMENTED");
   },
 };
+
+export default apiClient;
+*/
+import axios from "axios";
+
+const apiClient = axios.create({
+  baseURL: import.meta.env.VITE_API_URL,
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+});
 
 export default apiClient;
